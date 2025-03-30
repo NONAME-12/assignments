@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = {3,2,4,1,6};
         double startTime = System.nanoTime();
-        var result = factorial(7);
+        var result = fibonacci(7);
         double endTime = System.nanoTime();
         System.out.println(result);
         double duration = (endTime - startTime) / 1000000;
@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static int factorial(int n) {
-        return Solutions.factorial(n);
+    private static int fibonacci(int n) {
+        return Solutions.fibonacci(n);
     }
 }
