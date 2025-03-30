@@ -77,4 +77,19 @@ public class Solutions {
         if (n == 0) return 1;
         return a * power(a, n - 1);
     }
+    /**Problem 7.
+     Time complexity:O(n),where n is the number
+     You are given a number “n” and an array of “n” elements,
+     write the program that returns given array in reverse order
+     without using array data structure.
+     */
+    public static void reverseArray(int n) {
+        if(n == 0)
+            return;
+        var scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        reverseArray(n-1);
+        System.out.print(number+" ");
+    }
+
 }
