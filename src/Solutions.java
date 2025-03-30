@@ -58,5 +58,15 @@ public class Solutions {
             return 1;
         return n*factorial(n-1);
     }
-
+    /**Problem 5.
+     Time Complexity: O(2^n):O(n),where n is the number
+     You are given a number “n”, write the function for finding n-th
+     elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2).
+     F0= 0, F1 = 1.
+     */
+    public static int fibonacci(int n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
 }
