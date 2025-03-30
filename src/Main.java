@@ -1,10 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        int s = 7;
-        int i = 3;
+        int s = 32;
+        int i = 48;
         double startTime = System.nanoTime();
-        var result = binomialCoefficient(s,i);
+        var result = gcd(s,i);
         double endTime = System.nanoTime();
 
         double duration = (endTime - startTime) / 1000000;
@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static int binomialCoefficient(int s,int i) {
-         return Solutions.binomialCoefficient(s,i);
+    private static int gcd(int s,int i) {
+         return Solutions.gcd(s,i);
     }
 }

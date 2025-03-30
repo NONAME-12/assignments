@@ -119,5 +119,14 @@ public class Solutions {
         if (k == 0 || k == n) return 1;
         return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
     }
+    /**Problem 10.
+     Time complexity:O(log(min(a, b)))
+     You are given “a” and “b”, write the function for finding
+     GCD(a, b) using recursion. (Hint: Euclidean Algorithm)
+     */
+    public static int gcd(int a, int b) {
+        if (b == 0) return a;
+        return gcd(b, a % b);
+    }
 
 }
