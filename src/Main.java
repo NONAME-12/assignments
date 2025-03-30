@@ -1,10 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        String s = "1s23";
-        int i = 0;
+        int s = 7;
+        int i = 3;
         double startTime = System.nanoTime();
-        var result = isAllDigits(s,i);
+        var result = binomialCoefficient(s,i);
         double endTime = System.nanoTime();
 
         double duration = (endTime - startTime) / 1000000;
@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static boolean isAllDigits(String s,int i) {
-         return Solutions.isAllDigits(s,i);
+    private static int binomialCoefficient(int s,int i) {
+         return Solutions.binomialCoefficient(s,i);
     }
 }
