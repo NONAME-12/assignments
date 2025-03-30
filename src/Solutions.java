@@ -69,4 +69,12 @@ public class Solutions {
         if (n == 1) return 1;
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
+
+    /**Problem 6.
+     Time complexity:O(n),where n is the number
+     */
+    public static int power(int a, int n) {
+        if (n == 0) return 1;
+        return a * power(a, n - 1);
+    }
 }
