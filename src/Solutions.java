@@ -92,4 +92,15 @@ public class Solutions {
         System.out.print(number+" ");
     }
 
+    /**Problem 8.
+     Time complexity:O(n),where n is the length of string
+     You are given a string “s”, write the function for checking
+     whether “s” is all consists of digits
+     */
+    public static boolean isAllDigits(String s, int index) {
+        if (index == s.length()) return true;
+        if (!Character.isDigit(s.charAt(index))) return false;
+        return isAllDigits(s, index + 1);
+    }
+
 }

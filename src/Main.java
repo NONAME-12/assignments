@@ -1,17 +1,18 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[] arr = {3,2,4,1,6};
+        String s = "1s23";
+        int i = 0;
         double startTime = System.nanoTime();
-        reverseArray();
+        var result = isAllDigits(s,i);
         double endTime = System.nanoTime();
+
         double duration = (endTime - startTime) / 1000000;
-
-
+        System.out.println("Result: " + result);
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static void reverseArray() {
-         Solutions.reverseArray(5);
+    private static boolean isAllDigits(String s,int i) {
+         return Solutions.isAllDigits(s,i);
     }
 }
