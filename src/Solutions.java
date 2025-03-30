@@ -22,6 +22,18 @@ public class Solutions {
         }
         return min;
     }
+    /**Problem 2.
+     Time complexity:O(n),where n is the length of the array
+     You are given a number “n” and an array of “n” elements,
+     write the function that returns average of them.
+     */
+    public static double getAverage(int[] arr,int n){
+        double sum = arr[0];
+        for(int i=1;i<n;i++){
+            sum+=arr[i];
+        }
+        return sum/n;
+    }
 
 
 }
