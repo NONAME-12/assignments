@@ -34,6 +34,29 @@ public class Solutions {
         }
         return sum/n;
     }
+    /**Problem 3.
+     Time complexity:O(n),where n is the number
+     You are given a number “n”, write the function for checking
+     whether“n” is prime.
+     */
+    public static boolean isPrime(int n){
+        for(int i=2;i<n/2;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
 
+    /**Problem 4.
+     Time complexity:O(n),where n is the number
+     You are given a number “n”, write the program using recursion for
+     finding “n!”
+     */
+    public static int factorial(int n){
+        if(n==1 || n==0 )
+            return 1;
+        return n*factorial(n-1);
+    }
 
 }
